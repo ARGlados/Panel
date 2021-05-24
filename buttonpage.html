@@ -1,0 +1,108 @@
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<style>
+    html, body {
+        overflow: hidden;
+        background-color: #222;
+    }
+    @media(max-width: 300px) {
+  .box {
+     width: 100%;
+   }
+}
+h1{ 
+    font-family: Roboto;
+    font-size: 2.4vmax;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 12.5vmax;
+}
+h4{
+    font-family: Roboto;
+    font-size: 1.2vmax;
+    color: white;
+    margin: 0 auto;
+    
+}
+    
+</style>
+<style>
+    .wrapper{
+position:absolute;
+  top:20%;
+  left:50%;
+  transform : translate(-50% ,0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    }
+    .textWrap{
+    position:absolute;
+    top:20%;
+    left:50%;
+    transform : translate(-50% ,-115%);
+    }
+    
+    a{
+      display: flex;
+      align-items:center;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      /* white-space: nowrap; */
+      width: 12vmax;
+      /* line-height: 3.2vmax; */
+      font-size: 0.9vmax;
+      font-family: sans-serif;
+      text-decoration: none;
+      
+      color: #524758;
+      border: 0.2vmax solid #524758;
+      letter-spacing: 0.2vmax;
+      position: relative;
+      transition: all .35s;
+      height: 12vmax;
+      margin-left:2vmax;
+      border-radius: 1vmax;
+    }
+    
+    a span{
+      position: relative;
+      z-index: 2;
+    }
+    
+    a:after{
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: #ff003b;
+      transition: all .35s;
+      border-radius: 0.8vmax;
+    }
+    
+    a:hover{
+      color: #fff;
+      border: 0.18vmax solid #fff;
+    }
+    
+    a:hover:after{
+      width: 100%;
+    }
+      </style>
+<body>
+    <div class="textWrap">
+    <h1>И это еще не все</h1>
+            <h4>Технология позволяет покупателю увидеть, как кольца, которых нет в магазине, будут выглядеть на пальце покупателя в реальном времени посредством онлайн-примерки.<br>
+    </div>
+    <div class="wrapper">
+        <a href="#"><span>Дезинтермедиация</span></a>
+        <a href="#"><span>Снижение нерешительности клиента при покупке</span></a>
+        <a href="#"><span>Геймификация как стимулятор продаж</span></a>
+        <a href="#"><span>SEO-продвижение</span></a>
+        <a href="#"><span>Доступ по всему миру</span></a>
+        <a href="#"><span>Моральное устаревание и цифровизация</span></a>
+    </div>
+</body>
