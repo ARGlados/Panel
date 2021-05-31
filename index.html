@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* regular desktop styles */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-device-width: 600px) {
     body {
     line-height: 1.4vmax;
     color: #000;
@@ -222,48 +222,48 @@ and (max-device-width: 1000px)
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
     label {
         display: flex;
-      align-items:center;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      width: 12vw;
-      font-size: 0.95vw;
-      font-family: 'Montserrat', sans-serif;
-      text-decoration: none;
-      color: #524758;
-      border: 0.2vw solid #524758;
-      letter-spacing: 0.2vw;
-      position: relative;
-      transition: all .35s;
-      height: 12vw;
-      margin-left:2vw;
-      margin-bottom:2vw;
-      border-radius: 1vw;
-      line-height: 1.2vw;
-      font-weight: 600;
-      letter-spacing: 0.05vw;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 12vw;
+        font-size: 0.95vw;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        color: #524758;
+        border: 0.2vw solid #524758;
+        letter-spacing: 0.2vw;
+        position: relative;
+        transition: all .35s;
+        height: 12vw;
+        margin-left:2vw;
+        margin-bottom:2vw;
+        border-radius: 1vw;
+        line-height: 1.2vw;
+        font-weight: 600;
+        letter-spacing: 0.05vw;
 }
 label:hover{
-      color: #fff;
-      border: 0.18vw solid #fff;
+        color: #fff;
+        border: 0.18vw solid #fff;
     }
 label:hover:after{
-      width: 100%;
+        width: 100%;
 }
 label:after{
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 100%;
-      background: #ff003b;
-      transition: all .35s;
-      border-radius: 0.8vw;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #ff003b;
+        transition: all .35s;
+        border-radius: 0.8vw;
     }
 label span{
-      position: relative;
-      z-index: 2;
+        position: relative;
+        z-index: 2;
     }
 
 
@@ -307,35 +307,35 @@ h4{
 
 .classy-bq {
 
-  border-left:1px solid black;
-  margin: 1.5em 10px;
-  padding: .7em 25px;
-  quotes: "\201C""\201D""\2018""\2019";
-  color:black;
+    border-left:1px solid black;
+    margin: 1.5em 10px;
+    padding: .7em 25px;
+    quotes: "\201C""\201D""\2018""\2019";
+    color:black;
 }
 .classy-bq:before {
-  color: black;
-  content: open-quote;
-  font-size: 8em;
-  line-height: .1em;
-  margin-right: .25em;
-  vertical-align: -.4em;
-  opacity:0.60;
+    color: black;
+    content: open-quote;
+    font-size: 8em;
+    line-height: .1em;
+    margin-right: .25em;
+    vertical-align: -.4em;
+    opacity:0.60;
 }
 a {
     text-decoration: none; /* Убирает подчеркивание для ссылок */
     font-weight: 600;
     font-size: 1.2vmax;
-   } 
+    } 
 
- li{
-     margin-bottom: 5px;
-     font-size: 1.2vmax;
- }
+li{
+        margin-bottom: 5px;
+        font-size: 1.2vmax;
+}
 blockquote p {
-  display: inline;
-  font-size: 1.1vmax;
-  line-height:1.5;
+    display: inline;
+    font-size: 1.1vmax;
+    line-height:1.5;
 }
 .blockquote-section {width:100%;max-width:1200px;margin:0 auto;opacity:0.95;padding:20px;}
 .blockquote-section > cite {font-style:none}
