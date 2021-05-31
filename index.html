@@ -23,200 +23,6 @@ h1, h2, h3, h4, h5, h6, p {
                 margin: 1.1em 0;
             }
 </style>
-
-
-<style>
-
-#container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-            
-#carousel, #navigation {
-    /* flex: initial; */
-    display: flex;
-}
-            
-#carousel {
-    overflow: hidden;
-    width: 80vw;
-    height: 60vh;
-    border-radius: 4px;
-    background-color: #fff;
-}
-/*Ползунок*/           
-.p-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.4s ease-in-out;
-}
-            
-#button_a:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); 
-}
-            
-#button_b:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%); 
-}
-
-#button_c:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(-200%);
-    transform: translateY(-200%); 
-}
-
-#button_d:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(-300%);
-    transform: translateY(-300%); 
-}
-
-#button_e:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(-400%);
-    transform: translateY(-400%); 
-}
-
-#button_f:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(-500%);
-    transform: translateY(-500%); 
-}
-
-/*Внутрянка ползунка в панели с текстом*/
-[class^="panel_"] {
-    overflow: auto;
-    position: relative;
-    width: inherit;
-    height: inherit;
-    padding: 48px;
-}
-
-/*Неизвестно что - скорее всего относится к кнопкам -- hover на кнопку*/
-/* [class^="label_"]:hover {
-    color: #444;
-    background-color: #ffeed9;
-}  */
-
-#button_a:checked ~ #navigation .label_a,
-#button_b:checked ~ #navigation .label_b,
-#button_c:checked ~ #navigation .label_c,
-#button_d:checked ~ #navigation .label_d,
-#button_e:checked ~ #navigation .label_e,
-#button_f:checked ~ #navigation .label_f {
-     cursor: default;
-     color: #fff;
-     background-color: #19181d;
-}
-
-</style> 
-<style>
-
-/* regular desktop styles */
-
-@media only screen and (max-device-width: 600px) {
-    body {
-    line-height: 1.4vmax;
-    color: #000;
-}
-    h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2vmax;
-    color: black;
-    text-align: center;
-    vertical-align: middle;
-    letter-spacing: 0.04em;
-    font-weight: 700;
-    line-height: 1em;
-}
-h4{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1vmax;
-    color: black;
-    margin: 0 auto;
-}
-p {
-    font-size: 1vmax;
-
-}
-a {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.2vmax;
-}
-h2 {
-    font-size: 1.15vmax;
-}
-.blockquote-section {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    opacity: 0.95;
-}
-blockquote p {
-    display: inline;
-    font-size: 1vmax;
-    line-height: 1.5;
-}
-.classy-bq {
-    border-left: 1px solid black;
-    margin: 1.5em 5px;
-    padding: .7em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
-    color: black;
-}
-.classy-bq::before {
-    color: black;
-    content: open-quote;
-    font-size: 1vmax;
-    line-height: .1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-    opacity: 0.80;
-}
-ul > li {
-    position: relative;
-    padding: 0 24px 0 15px;
-}
-ul > li::before {
-    content: '';
-    position: absolute;
-    top: .75em;
-    left: 5px;
-    margin-top: -3px;
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background-color: #000;
-}
-.italicbold {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 1vmax;
-}
-.itr{
-    text-align: center;
-    font-size: 1vmax;
-}
-h3{
-    font-size: 1.2vmax;
-}
-li{
-    font-size: 1vmax;
-    margin-bottom: 5px;
-}
-}
-
-/* mobile only styles when the device is 0-600px in maximum width */
-
-@media only screen 
-and (max-device-width: 1000px)
-{ ... }
-
-/* mobile only styles when the device is up to 1000px in maximum width */
-
-</style>
 <style>
 
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
@@ -345,6 +151,198 @@ body {background:#19181d;padding-top:50px;
 
 font-family: 'Montserrat', sans-serif;
 }
+</style>
+
+<style>
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+            
+#carousel, #navigation {
+    /* flex: initial; */
+    display: flex;
+}
+            
+#carousel {
+    overflow: hidden;
+    width: 80vw;
+    height: 60vh;
+    border-radius: 4px;
+    background-color: #fff;
+}
+/*Ползунок*/           
+.p-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+            
+#button_a:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); 
+}
+            
+#button_b:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); 
+}
+
+#button_c:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%); 
+}
+
+#button_d:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%); 
+}
+
+#button_e:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%); 
+}
+
+#button_f:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-500%);
+    transform: translateY(-500%); 
+}
+
+/*Внутрянка ползунка в панели с текстом*/
+[class^="panel_"] {
+    overflow: auto;
+    position: relative;
+    width: inherit;
+    height: inherit;
+    padding: 48px;
+}
+
+/*Неизвестно что - скорее всего относится к кнопкам -- hover на кнопку*/
+/* [class^="label_"]:hover {
+    color: #444;
+    background-color: #ffeed9;
+}  */
+
+#button_a:checked ~ #navigation .label_a,
+#button_b:checked ~ #navigation .label_b,
+#button_c:checked ~ #navigation .label_c,
+#button_d:checked ~ #navigation .label_d,
+#button_e:checked ~ #navigation .label_e,
+#button_f:checked ~ #navigation .label_f {
+     cursor: default;
+     color: #fff;
+     background-color: #19181d;
+}
+
+</style> 
+<style>
+
+/* regular desktop styles */
+@media only screen and (max-device-width: 600px) {
+    body {
+    line-height: 1.4vmax;
+    color: #000;
+}
+    h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2vmax;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    line-height: 1em;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vmax;
+    color: black;
+    margin: 0 auto;
+}
+p {
+    font-size: 1vmax;
+
+}
+a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2vmax;
+}
+h2 {
+    font-size: 1.15vmax;
+}
+.blockquote-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+blockquote p {
+    display: inline;
+    font-size: 1vmax;
+    line-height: 1.5;
+}
+.classy-bq {
+    border-left: 1px solid black;
+    margin: 1.5em 5px;
+    padding: .7em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    color: black;
+}
+.classy-bq::before {
+    color: black;
+    content: open-quote;
+    font-size: 1vmax;
+    line-height: .1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    opacity: 0.80;
+}
+ul > li {
+    position: relative;
+    padding: 0 24px 0 15px;
+}
+ul > li::before {
+    content: '';
+    position: absolute;
+    top: .75em;
+    left: 5px;
+    margin-top: -3px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.italicbold {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1vmax;
+}
+.itr{
+    text-align: center;
+    font-size: 1vmax;
+}
+h3{
+    font-size: 1.2vmax;
+}
+li{
+    font-size: 1vmax;
+    margin-bottom: 5px;
+}
+}
+
+/* mobile only styles when the device is 0-600px in maximum width */
+
+@media only screen 
+and (max-device-width: 1000px)
+{ ... }
+
+/* mobile only styles when the device is up to 1000px in maximum width */
+
 </style>
  </head>
  <body>
