@@ -27,12 +27,6 @@
 }
 
 
-h1 { font-size: calc(1em + 7px); }
-h2 { font-size: calc(1em + 4px); } 
-h3 { font-size: calc(1em + 3px); } 
-h4 { font-size: calc(1em + 2px); }
-h5 { font-size: calc(1em + 1px); }
-h6 { font-size: 1em; }
 
 h1, h2, h3, h4, h5, h6 {
     color: #222;
