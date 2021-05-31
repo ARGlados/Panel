@@ -112,93 +112,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 </style> 
 <style>
-label {
-        display: flex;
-      align-items:center;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      width: 12vw;
-      font-size: 0.95vw;
-      font-family: 'Montserrat', sans-serif;
-      text-decoration: none;
-      color: #524758;
-      border: 0.2vw solid #524758;
-      letter-spacing: 0.2vw;
-      position: relative;
-      transition: all .35s;
-      height: 12vw;
-      margin-left:2vw;
-      margin-bottom:2vw;
-      border-radius: 1vw;
-      line-height: 1.2vw;
-      font-weight: 600;
-      letter-spacing: 0.05vw;
-}
-label:hover{
-      color: #fff;
-      border: 0.18vw solid #fff;
-    }
-label:hover:after{
-      width: 100%;
-}
-label:after{
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 100%;
-      background: #ff003b;
-      transition: all .35s;
-      border-radius: 0.8vw;
-    }
-label span{
-      position: relative;
-      z-index: 2;
-    }
 
-
-.textWrap{
-    display: block;
-    height: 5vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-h1{ 
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.2vmax;
-    color: black;
-    text-align: center;
-    vertical-align: middle;
-    letter-spacing: 0.04em;
-    font-weight: 700;
-    line-height: 1em;
-}
-h2 {
-    font-size: 1.8vmax;
-}
-
-p {
-    font-size: 1.1vmax;
-}
-
-h3{
-    font-size:1.6vmax;
-}
-h4{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4vmax;
-    color: black;
-    margin: 0 auto;
-    
-}
 /* regular desktop styles */
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-width: 600px) {
     body {
     line-height: 1.4vmax;
     color: #000;
@@ -303,7 +220,90 @@ and (max-device-width: 1000px)
 <style>
 
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+    label {
+        display: flex;
+      align-items:center;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 12vw;
+      font-size: 0.95vw;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      color: #524758;
+      border: 0.2vw solid #524758;
+      letter-spacing: 0.2vw;
+      position: relative;
+      transition: all .35s;
+      height: 12vw;
+      margin-left:2vw;
+      margin-bottom:2vw;
+      border-radius: 1vw;
+      line-height: 1.2vw;
+      font-weight: 600;
+      letter-spacing: 0.05vw;
+}
+label:hover{
+      color: #fff;
+      border: 0.18vw solid #fff;
+    }
+label:hover:after{
+      width: 100%;
+}
+label:after{
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: #ff003b;
+      transition: all .35s;
+      border-radius: 0.8vw;
+    }
+label span{
+      position: relative;
+      z-index: 2;
+    }
 
+
+.textWrap{
+    display: block;
+    height: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1{ 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2vmax;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    line-height: 1em;
+}
+h2 {
+    font-size: 1.8vmax;
+}
+
+p {
+    font-size: 1.1vmax;
+}
+
+h3{
+    font-size:1.6vmax;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4vmax;
+    color: black;
+    margin: 0 auto;
+    
+}
 
 .classy-bq {
 
