@@ -2,6 +2,7 @@
 <html>
  <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <title>HTML5</title>
@@ -197,8 +198,7 @@ h4{
 }
 /* regular desktop styles */
 
-@media only screen 
-and (max-device-width: 600px) {
+@media only screen and (max-device-width: 600px) {
     body {
     line-height: 1.4vmax;
     color: #000;
@@ -226,7 +226,7 @@ p {
 a {
     text-decoration: none;
     font-weight: 600;
-    font-size: 1vmax;
+    font-size: 1.2vmax;
 }
 h2 {
     font-size: 1.15vmax;
@@ -285,6 +285,10 @@ ul > li::before {
 h3{
     font-size: 1.2vmax;
 }
+li{
+    font-size: 1vmax;
+    margin-bottom: 5px;
+}
 }
 
 /* mobile only styles when the device is 0-600px in maximum width */
@@ -321,7 +325,7 @@ and (max-device-width: 1000px)
 a {
     text-decoration: none; /* Убирает подчеркивание для ссылок */
     font-weight: 600;
-    font-size: 1.6vmax;
+    font-size: 1.2vmax;
    } 
 
  li{
